@@ -136,34 +136,41 @@ GROQ_API_KEY=your_groq_api_key
 
 1. Clone the repository
 
+```bash
 git clone https://github.com/your-username/DocuMind-AI.git  
-cd DocuMind-AI  
+cd DocuMind-AI
+```
 
 2. Create a virtual environment
-
+```bash
 python -m venv venv  
 source venv/bin/activate   (Windows: venv\Scripts\activate)
+```
 
 3. Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
 4. Start the backend server
-
+```bash
 cd backend  
 uvicorn main:app --reload  
+```
 
 Backend will run on:  
+```bash
 http://localhost:8000  
-
+```
 5. Start the frontend application
-
+```bash
 cd frontend  
 streamlit run app.py  
-
+```
+```bash
 Frontend will run on:  
 http://localhost:8501  
-
+```
 ---
 
 ## 🧪 Example Use Case
@@ -172,17 +179,7 @@ http://localhost:8501
 2. Ask: "What is the leave policy?"  
 3. System retrieves relevant sections  
 4. AI generates an accurate answer  
-5. Supporting document sources are shown  
-
----
-
-## 📈 Future Improvements
-
-- Redis caching for faster repeated queries  
-- Support for multiple document collections  
-- Authentication and user management  
-- OCR support for scanned PDFs  
-- Feedback loop for answer improvement  
+5. Supporting document sources are shown   
 
 ---
 
